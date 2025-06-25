@@ -1,1 +1,36 @@
-Hello, this is Najim Mia testing Github Destop!
+\documentclass[12pt,a4paper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{caption}
+
+\title{Side-by-Side Images Using Subfigure in LaTeX}
+\author{Najim Mia}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section*{Sample Side-by-Side Figures}
+
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{najim.jpg}
+        \caption{Figure One}
+        \label{fig:one}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{najim.jpg}
+        \caption{Figure Two}
+        \label{fig:two}
+    \end{subfigure}
+    \caption{Two images displayed side-by-side}
+    \label{fig:sidebyside}
+\end{figure}
+
+\end{document}
